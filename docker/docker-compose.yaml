@@ -1,0 +1,11 @@
+services:
+  web:
+     build: .
+     image: electricity-audit:v0.1
+     restart: unless-stopped
+     ports: 
+       - 9310:5000
+     volumes:
+       - /home/servercore/electricity-audit/db:/app/db
+       - /home/servercore/electricity-audit/web:/app/web
+
