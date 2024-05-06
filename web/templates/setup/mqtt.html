@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block page_header %}
+  <h1>{% block title %}MQTT{% endblock %}</h1>
+{% endblock %}
+
+{% block content %}
+    <div>This page will contain setup for connecting to mqtt</div>
+    <script>
+      async function initMqtt() {
+        const a = await fetch("/setup/initMqtt")
+        console.log(a.body)
+      }
+    </script>
+    <button name="initMqttButton" onclick="initMqtt()">Init Mqtt</button>
+{% endblock %}

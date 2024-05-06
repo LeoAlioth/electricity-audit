@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block page_header %}
+<h1>{% block title %}DB{% endblock %}</h1>
+{% endblock %}
+
+{% block content %}
+<script>
+  async function initDb() {
+    const a = await fetch("/setup/initDb")
+  }
+</script>
+<button name="initDbButton" onclick="initDb()">Init Database</button>
+{% endblock %}
