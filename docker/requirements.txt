@@ -1,4 +1,4 @@
-flask-mqtt
+paho-mqtt
 click
 colorama
 Flask
@@ -7,3 +7,4 @@ Jinja2
 MarkupSafe
 Werkzeug
 gunicorn
+flask-socketio

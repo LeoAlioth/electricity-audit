@@ -11,6 +11,16 @@
         const a = await fetch("/setup/initMqtt")
         console.log(a.body)
       }
+      async function readMqttSettings() {
+        const a = await fetch("/setup/readMqttSettings")
+        console.log(a.body)
+      }
+      async function publishMqtt() {
+        const a = await fetch("/setup/publish")
+        console.log(a.body)
+      }
     </script>
     <button name="initMqttButton" onclick="initMqtt()">Init Mqtt</button>
+    <button name="readMqttSettingsButton" onclick="readMqttSettings()">Read Mqtt Settings</button>
+    <button name="publishMqttButton" onclick="publishMqtt()">Publish to mqtt</button>
 {% endblock %}

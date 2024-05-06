@@ -14,9 +14,9 @@ CREATE TABLE input_measurement (
   value NUMBER_BASE NOT NULL
 );
 
-INSERT INTO setting(setting_code, setting_value) VALUES ('mqtt_hostname', 'ha.lan');
-INSERT INTO setting(setting_code, setting_value) VALUES ('mqtt_port', '1883');
-INSERT INTO setting(setting_code, setting_value) VALUES ('mqtt_source_topic', 'electricity_meters');
-INSERT INTO setting(setting_code, setting_value) VALUES ('mqtt_destination_topic', 'virtual_electricity_meters');
-INSERT INTO setting(setting_code, setting_value) VALUES ('mqtt_username', 'electricity-audit');
-INSERT INTO setting(setting_code, setting_value) VALUES ('mqtt_password', 'electricity-audit-pass');
+INSERT INTO setting(setting_code, setting_value) VALUES ('MQTT_BROKER_URL', '192.168.1.98');
+INSERT INTO setting(setting_code, setting_value) VALUES ('MQTT_BROKER_PORT', '1883');
+INSERT INTO setting(setting_code, setting_value) VALUES ('MQTT_INPUT_METERS_TOPIC', 'input-meters');
+INSERT INTO setting(setting_code, setting_value) VALUES ('MQTT_OUTPUT_METERS_TOPIC', 'output-meters');
+INSERT INTO setting(setting_code, setting_value) VALUES ('MQTT_USERNAME', 'electricity-audit');
+INSERT INTO setting(setting_code, setting_value) VALUES ('MQTT_PASSWORD', 'electricity-audit-pass');
