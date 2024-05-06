@@ -35,5 +35,8 @@ def create_app(test_config=None):
 
     from . import setup
     app.register_blueprint(setup.bp)
+
+    print("i am doing stuff here!")
+    print("in multiple lines!")
     
     return app
